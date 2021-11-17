@@ -84,7 +84,7 @@ export class Subscription {
   }
 
   unsubscribe() {
-    if (this.keepAliveTimer !== "undefined") {
+    if (typeof this.keepAliveTimer !== "undefined") {
       clearInterval(this.keepAliveTimer);
     }
 
